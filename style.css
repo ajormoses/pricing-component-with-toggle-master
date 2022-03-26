@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background: url(./images/bg-top.svg) no-repeat;
+  background-position: 225px -20px;
+  background-size: 85%;
+  background-color: hsl(240, 78%, 98%);
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+}
+
+/* header design */
+
+.header-wrap {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.header-wrap h1 {
+  font-size: 1.8rem;
+  color: hsl(233, 13%, 49%);
+}
+
+/*  header toggle design */
+.toggle-wrap {
+  height: 29px;
+  width: 55px;
+  border-radius: 20px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-wrap:hover {
+  background: hsl(236, 72%, 79%);
+}
+
+.toggle-circle-annually {
+  background-color: white;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  margin-left: 4px;
+}
+
+.toggle-circle-monthly {
+  background-color: white;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  margin-right: 4px;
+  opacity: 0;
+}
+
+/* header toggle ends here  */
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px 80px 30px;
+  width: 300px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  color: hsl(234, 14%, 74%);
+}
+
+/* article designs start here */
+article {
+  padding-bottom: 30px;
+}
+.article-wrap {
+  text-align: center;
+  background: white;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  /* height: 300px; */
+}
+
+.article-head {
+  padding-top: 30px;
+}
+
+.article-head h2 {
+  font-size: 1.2rem;
+  color: hsl(233, 13%, 49%);
+}
+
+.article-head p {
+  padding-top: 20px;
+  font-size: 4.5rem;
+  padding-bottom: 25px;
+  color: hsl(232, 13%, 33%);
+}
+
+.article-head p span {
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 8px;
+}
+
+.article-content hr {
+  border: 1px solid hsl(234, 14%, 74%);
+  width: 250px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.article-content p {
+  padding: 18px;
+  color: hsl(233, 13%, 49%);
+  font-size: 0.9rem;
+}
+
+/* ARTICLE BUTTON STARTS HERE */
+
+.btn {
+  padding-top: 30px;
+}
+
+.btn button {
+  padding: 15px 80px 15px;
+  border-radius: 5px;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background: white;
+  color: hsl(236, 72%, 79%);
+  border: 1px solid hsl(233, 13%, 49%);
+}
+
+/* second article design starts here */
+.mid-wrapper {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.mid-wrapper p {
+  color: white;
+}
+
+.mid-wrapper h2 {
+  color: white;
+}
+
+.mid-wrapper .btn button {
+  background: white;
+  color: hsl(237, 63%, 64%);
+  cursor: pointer;
+}
+
+.mid-wrapper .btn button:hover {
+  border: 1px solid white;
+  background: hsl(237, 63%, 64%);
+  color: white;
+}
+
+.price-one {
+  display: none;
+}
+
+.price-two {
+  display: none;
+}
+
+.price-three {
+  display: none;
+}
+/* JavaScript Implementation */
+.toggle-circle-annually.show {
+  opacity: 0;
+}
+
+.toggle-circle-monthly.show {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.price-one.show {
+  display: block;
+}
+
+.price-two.show {
+  display: block;
+}
+
+.price-three.show {
+  display: block;
+}
+
+.basic.show {
+  display: none;
+}
+
+.professional.show {
+  display: none;
+}
+
+.master.show {
+  display: none;
+}
+
+@media only screen and (min-width: 500px) {
+  .article-wrap {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  body {
+    background: url(./images/bg-top.svg) 950px -5px no-repeat,
+      url(./images/bg-bottom.svg) 0 470px no-repeat;
+    background-size: 30%;
+    background-color: hsl(240, 78%, 98%);
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mid-wrapper {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    background: url(./images/bg-top.svg) 1080px -5px no-repeat,
+      url(./images/bg-bottom.svg) 0 500px no-repeat;
+    background-size: 25%;
+    background-color: hsl(240, 78%, 98%);
+  }
+}
